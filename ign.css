@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header,
+#main section {
+    margin: 50px;
+}
+
+#header .menu {
+    margin-top: 20px;
+}
+
+#header #iconePesquisa,
+#btnEntrar {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.icone-menuHamburguer {
+    display: none;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu ul li {
+    display: inline;
+    margin-left: 60px;    
+}
+
+.menu ul #li-xbox {
+    margin-left: 0px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.menu ul li .dropdown {
+    /* position: relative; */
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.menu ul li .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu ul li .dropdown .dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+}
+
+.menu ul li .dropdown .dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.menu ul li .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ #btnEntrar {
+    border: none;
+    background-color: #e92424;
+    color: #fff;
+    padding: 10px;
+    height: 45px;
+    width: 70px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+ .subMenu {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    line-height: 25px;
+}
+
+.subMenu ul {
+    display: flex;
+}
+
+.subMenu ul .linha-vertical {
+    height: 30px;
+    border-left: 2px solid #c2c0c0;
+    margin-left: 150px;
+    margin-right: 75px;
+}
+
+ .subMenu ul #li-esportes {
+    margin-left: 0px;
+}
+
+ section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 80px;
+}
+
+ section .divSombra {
+    margin-top: -130px;
+    position: relative;
+    z-index: 2;
+    height: 126px;
+}
+
+ section .divSombra-fifa {
+    background-color: #0707725a;
+}
+
+ section .divSombra-jurassicPark {
+    background-color: #db090952;
+}
+
+ section .divSombra-ps4 {
+    background-color: #cece1357;
+}
+
+ section .divSombra-tomCruise {
+    background-color: #0896c55d;
+}
+
+ #hamburguer {
+    display: none;
+    background-color: #ada8a8;
+    text-align: center;
+}
+
+ #hamburguer ul li {
+    display: block;
+    margin-left: 0px;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+#hamburguer ul li:hover {
+    background-color: #ddd;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+    #iconePesquisa{
+        display: none;
+    }
+    #header .menu {
+        display: none;
+    }
+
+    #header .icone-menuHamburguer {
+        display: block;
+    }
+
+    #main .subMenu {
+        display: none;
+    }
+}

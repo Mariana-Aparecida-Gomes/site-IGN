@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/IGN.png" type="image/x-icon">
+    <link rel="stylesheet" href="ign.css" />
+    <title>Site IGN</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <img
+        src="img/logoIGN.png"
+        alt="Logo da IGN"
+        width="120px"
+        height="40px"
+      />
+      <span
+        class="material-symbols-outlined icone-menuHamburguer"
+        onclick="clickMenu()"
+        >Menu</span
+      >
+
+      <nav class="menu">
+        <ul>
+          <li id="li-xbox">
+            <a href="#">Xbox</a>
+          </li>
+          <li>
+            <a href="#">Ps5</a>
+          </li>
+          <li>
+            <a href="#">Switch</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              Veja mais
+              <div class="dropdown-content">
+                <a href="#">Fale Conosco</a>
+                <a href="#">Imprensa</a>
+                <a href="#">Privacidade</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <img
+        id="iconePesquisa"
+        src="img/iconePesquisa.png"
+        alt="Ícone de pesquisa"
+        width="40px"
+        height="40px"
+      />
+      <button id="btnEntrar">Entrar</button>
+    </header>
+
+    <main id="main">
+      <nav class="menu subMenu">
+        <ul>
+          <li id="li-esportes">
+            <a href="#">ESPORTES</a>
+          </li>
+          <div class="linha-vertical"></div>
+          <li>
+            <a href="#">CINEMA</a>
+          </li>
+          <div class="linha-vertical"></div>
+          <li>
+            <a href="#">GAMES</a>
+          </li>
+          <div class="linha-vertical"></div>
+          <li>
+            <a href="#">FAMOSOS</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="menu" id="hamburguer">
+        <ul>
+          <li>
+            <a href="#">XBOX</a>
+          </li>
+          <li>
+            <a href="#">PS5</a>
+          </li>
+          <li>
+            <a href="#">SWITCH</a>
+          </li>
+          <li>
+            <a href="#">ESPORTES</a>
+          </li>
+          <li>
+            <a href="#">CINEMA</a>
+          </li>
+          <li>
+            <a href="#">GAMES</a>
+          </li>
+          <li>
+            <a href="#">FAMOSOS</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              VEJA MAIS
+              <div class="dropdown-content">
+                <a href="#">Fale Conosco</a>
+                <a href="#">Imprensa</a>
+                <a href="#">Privacidade</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <section>
+        <div>
+          <img
+            src="img/fifa.webp"
+            alt="Imagem Fifa"
+            width="300px"
+            height="450px"
+          />
+          <div class="divSombra divSombra-fifa"></div>
+        </div>
+
+        <div>
+          <img
+            src="img/jurassicPark.webp"
+            alt="Imagem Jurassic Park"
+            width="300px"
+            height="450px"
+          />
+          <div class="divSombra divSombra-jurassicPark"></div>
+        </div>
+
+        <div>
+          <img
+            src="img/ps4.jpg"
+            alt="Imagem PS4"
+            width="300px"
+            height="450px"
+          />
+          <div class="divSombra divSombra-ps4"></div>
+        </div>
+
+        <div>
+          <img
+            src="img/tomCruise.webp"
+            alt="Imagem Tom Cruise"
+            width="300px"
+            height="450px"
+          />
+          <div class="divSombra divSombra-tomCruise"></div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function clickMenu() {
+        if (hamburguer.style.display == "block") {
+          hamburguer.style.display = "none";
+        } else {
+          hamburguer.style.display = "block";
+        }
+      }
+
+      window.addEventListener("resize", function () {
+        var width = window.innerWidth;
+        if (width > 1200) {
+          hamburguer.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
